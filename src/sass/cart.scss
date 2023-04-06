@@ -1,0 +1,84 @@
+.cart {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  main {
+    padding: 2rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    h1 {
+      color: white;
+      font: 100 2rem "Roboto";
+    }
+  }
+  aside {
+    border-radius: 100px 0 0 100px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    height: 100%;
+    width: 100%;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.182);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      margin: 1rem;
+      letter-spacing: 2px;
+      font: 100 1.8rem "Roboto";
+      &:last-of-type {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.cartItem {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  margin: 2rem 0;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  align-items: center;
+  img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    button {
+      width: 30px;
+      height: 30px;
+      border: none;
+      background-color: rgb(237, 86, 21);
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover{
+        background-color: rgb(11, 11, 11);
+      }
+    }
+    p{
+        display: grid;
+        place-items: center;
+        width: 30px;
+        height:30px;
+    }
+
+  }
+  svg{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: inline-block;
+    margin: auto;
+    &:hover{
+        color: rgb(237, 86, 21);
+    }
+  }
+}
